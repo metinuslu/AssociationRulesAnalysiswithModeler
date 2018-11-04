@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><PMML xmlns="http://www.dmg.org/PMML-4_2" version="4.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Header copyright="(C) Copyright IBM Corp. 1994, 2015">
+<Application name="IBM SPSS Modeler" version="18.1"/>
+</Header>
+<DataDictionary numberOfFields="11">
+<DataField dataType="string" name="fruitveg" optype="categorical">
+<Extension extender="spss" name="storageType" value="string"/>
+<Extension extender="spss" name="flagTypeTrueValue" value="T"/>
+<Value property="valid" value="F"/>
+<Value property="valid" value="T"/>
+</DataField>
+<DataField dataType="string" name="freshmeat" optype="categorical">
+<Extension extender="spss" name="storageType" value="string"/>
+<Extension extender="spss" name="flagTypeTrueValue" value="T"/>
+<Value property="valid" value="F"/>
+<Value property="valid" value="T"/>
+</DataField>
+<DataField dataType="string" name="dairy" optype="categorical">
+<Extension extender="spss" name="storageType" value="string"/>
+<Extension extender="spss" name="flagTypeTrueValue" value="T"/>
+<Value property="valid" value="F"/>
+<Value property="valid" value="T"/>
+</DataField>
+<DataField dataType="string" name="cannedveg" optype="categorical">
+<Extension extender="spss" name="storageType" value="string"/>
+<Extension extender="spss" name="flagTypeTrueValue" value="T"/>
+<Value property="valid" value="F"/>
+<Value property="valid" value="T"/>
+</DataField>
+<DataField dataType="string" name="cannedmeat" optype="categorical">
+<Extension extender="spss" name="storageType" value="string"/>
+<Extension extender="spss" name="flagTypeTrueValue" value="T"/>
+<Value property="valid" value="F"/>
+<Value property="valid" value="T"/>
+</DataField>
+<DataField dataType="string" name="frozenmeal" optype="categorical">
+<Extension extender="spss" name="storageType" value="string"/>
+<Extension extender="spss" name="flagTypeTrueValue" value="T"/>
+<Value property="valid" value="F"/>
+<Value property="valid" value="T"/>
+</DataField>
+<DataField dataType="string" name="beer" optype="categorical">
+<Extension extender="spss" name="storageType" value="string"/>
+<Extension extender="spss" name="flagTypeTrueValue" value="T"/>
+<Value property="valid" value="F"/>
+<Value property="valid" value="T"/>
+</DataField>
+<DataField dataType="string" name="wine" optype="categorical">
+<Extension extender="spss" name="storageType" value="string"/>
+<Extension extender="spss" name="flagTypeTrueValue" value="T"/>
+<Value property="valid" value="F"/>
+<Value property="valid" value="T"/>
+</DataField>
+<DataField dataType="string" name="softdrink" optype="categorical">
+<Extension extender="spss" name="storageType" value="string"/>
+<Extension extender="spss" name="flagTypeTrueValue" value="T"/>
+<Value property="valid" value="F"/>
+<Value property="valid" value="T"/>
+</DataField>
+<DataField dataType="string" name="fish" optype="categorical">
+<Extension extender="spss" name="storageType" value="string"/>
+<Extension extender="spss" name="flagTypeTrueValue" value="T"/>
+<Value property="valid" value="F"/>
+<Value property="valid" value="T"/>
+</DataField>
+<DataField dataType="string" name="confectionery" optype="categorical">
+<Extension extender="spss" name="storageType" value="string"/>
+<Extension extender="spss" name="flagTypeTrueValue" value="T"/>
+<Value property="valid" value="F"/>
+<Value property="valid" value="T"/>
+</DataField>
+</DataDictionary>
+<AssociationModel algorithmName="Apriori" functionName="associationRules" minimumConfidence="0.501742160278746" minimumSupport="0.167" modelName="11 fields" numberOfItems="5" numberOfItemsets="8" numberOfRules="11" numberOfTransactions="1000">
+<MiningSchema>
+<MiningField name="fruitveg" usageType="active">
+<Extension extender="spss" name="direction" value="BOTH"/>
+</MiningField>
+<MiningField name="freshmeat" usageType="active">
+<Extension extender="spss" name="direction" value="BOTH"/>
+</MiningField>
+<MiningField name="dairy" usageType="active">
+<Extension extender="spss" name="direction" value="BOTH"/>
+</MiningField>
+<MiningField name="cannedveg" usageType="active">
+<Extension extender="spss" name="direction" value="BOTH"/>
+</MiningField>
+<MiningField name="cannedmeat" usageType="active">
+<Extension extender="spss" name="direction" value="BOTH"/>
+</MiningField>
+<MiningField name="frozenmeal" usageType="active">
+<Extension extender="spss" name="direction" value="BOTH"/>
+</MiningField>
+<MiningField name="beer" usageType="active">
+<Extension extender="spss" name="direction" value="BOTH"/>
+</MiningField>
+<MiningField name="wine" usageType="active">
+<Extension extender="spss" name="direction" value="BOTH"/>
+</MiningField>
+<MiningField name="softdrink" usageType="active">
+<Extension extender="spss" name="direction" value="BOTH"/>
+</MiningField>
+<MiningField name="fish" usageType="active">
+<Extension extender="spss" name="direction" value="BOTH"/>
+</MiningField>
+<MiningField name="confectionery" usageType="active">
+<Extension extender="spss" name="direction" value="BOTH"/>
+</MiningField>
+</MiningSchema>
+<Item id="4" value="frozenmeal"/>
+<Item id="5" value="cannedveg"/>
+<Item id="1" value="confectionery"/>
+<Item id="2" value="wine"/>
+<Item id="3" value="beer"/>
+<Itemset id="1" numberOfItems="1" support="0.276">
+<ItemRef itemRef="1"/>
+</Itemset>
+<Itemset id="4" numberOfItems="1" support="0.302">
+<ItemRef itemRef="4"/>
+</Itemset>
+<Itemset id="5" numberOfItems="1" support="0.303">
+<ItemRef itemRef="5"/>
+</Itemset>
+<Itemset id="8" numberOfItems="2" support="0.173">
+<ItemRef itemRef="4"/>
+<ItemRef itemRef="5"/>
+</Itemset>
+<Itemset id="2" numberOfItems="1" support="0.287">
+<ItemRef itemRef="2"/>
+</Itemset>
+<Itemset id="3" numberOfItems="1" support="0.293">
+<ItemRef itemRef="3"/>
+</Itemset>
+<Itemset id="6" numberOfItems="2" support="0.17">
+<ItemRef itemRef="3"/>
+<ItemRef itemRef="4"/>
+</Itemset>
+<Itemset id="7" numberOfItems="2" support="0.167">
+<ItemRef itemRef="3"/>
+<ItemRef itemRef="5"/>
+</Itemset>
+<AssociationRule antecedent="1" confidence="0.5217391304347826" consequent="2" id="1" lift="1.8179063778215423" support="0.144"/>
+<AssociationRule antecedent="2" confidence="0.5017421602787456" consequent="1" id="2" lift="1.8179063778215423" support="0.144"/>
+<AssociationRule antecedent="3" confidence="0.5802047781569966" consequent="4" id="3" lift="1.9212078746920414" support="0.17"/>
+<AssociationRule antecedent="4" confidence="0.5629139072847682" consequent="3" id="4" lift="1.9212078746920418" support="0.17"/>
+<AssociationRule antecedent="3" confidence="0.5699658703071673" consequent="5" id="5" lift="1.8810754795616083" support="0.167"/>
+<AssociationRule antecedent="5" confidence="0.5511551155115512" consequent="3" id="6" lift="1.8810754795616078" support="0.167"/>
+<AssociationRule antecedent="4" confidence="0.5728476821192053" consequent="5" id="7" lift="1.8905864096343412" support="0.173"/>
+<AssociationRule antecedent="5" confidence="0.570957095709571" consequent="4" id="8" lift="1.8905864096343412" support="0.173"/>
+<AssociationRule antecedent="6" confidence="0.8588235294117647" consequent="5" id="9" lift="2.8344010871675405" support="0.146"/>
+<AssociationRule antecedent="7" confidence="0.874251497005988" consequent="4" id="10" lift="2.894872506642345" support="0.146"/>
+<AssociationRule antecedent="8" confidence="0.8439306358381503" consequent="3" id="11" lift="2.880309337331571" support="0.146"/>
+</AssociationModel>
+</PMML>
